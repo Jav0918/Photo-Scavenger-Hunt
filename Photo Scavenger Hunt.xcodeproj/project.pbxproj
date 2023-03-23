@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8101626729CBBF9600EE81EE /* ScavengeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8101626629CBBF9600EE81EE /* ScavengeListViewController.swift */; };
+		8101626929CBDC0C00EE81EE /* ScavengeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8101626829CBDC0C00EE81EE /* ScavengeDetailViewController.swift */; };
+		8101626D29CBF58A00EE81EE /* ScavengeAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8101626C29CBF58A00EE81EE /* ScavengeAnnotationView.swift */; };
+		8101627129CBF71700EE81EE /* ScavengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8101627029CBF71700EE81EE /* ScavengeCell.swift */; };
 		8158ACC329CB9449006558AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158ACC229CB9449006558AB /* AppDelegate.swift */; };
 		8158ACC529CB9449006558AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158ACC429CB9449006558AB /* SceneDelegate.swift */; };
-		8158ACC729CB9449006558AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158ACC629CB9449006558AB /* ViewController.swift */; };
 		8158ACCA29CB9449006558AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8158ACC829CB9449006558AB /* Main.storyboard */; };
 		8158ACCC29CB944B006558AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8158ACCB29CB944B006558AB /* Assets.xcassets */; };
 		8158ACCF29CB944B006558AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8158ACCD29CB944B006558AB /* LaunchScreen.storyboard */; };
+		81E02C7529CB9A9C005F95AB /* Scavanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E02C7429CB9A9C005F95AB /* Scavanges.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8101626629CBBF9600EE81EE /* ScavengeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengeListViewController.swift; sourceTree = "<group>"; };
+		8101626829CBDC0C00EE81EE /* ScavengeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengeDetailViewController.swift; sourceTree = "<group>"; };
+		8101626C29CBF58A00EE81EE /* ScavengeAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengeAnnotationView.swift; sourceTree = "<group>"; };
+		8101627029CBF71700EE81EE /* ScavengeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengeCell.swift; sourceTree = "<group>"; };
 		8158ACBF29CB9449006558AB /* Photo Scavenger Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Scavenger Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8158ACC229CB9449006558AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8158ACC429CB9449006558AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8158ACC629CB9449006558AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8158ACC929CB9449006558AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8158ACCB29CB944B006558AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8158ACCE29CB944B006558AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8158ACD029CB944B006558AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E02C7429CB9A9C005F95AB /* Scavanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scavanges.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				8158ACC229CB9449006558AB /* AppDelegate.swift */,
 				8158ACC429CB9449006558AB /* SceneDelegate.swift */,
-				8158ACC629CB9449006558AB /* ViewController.swift */,
+				8158ACD929CB94D7006558AB /* Models */,
+				8158ACD829CB94CD006558AB /* Scavenge Detail */,
+				8158ACD629CB94A5006558AB /* Scavenge List */,
 				8158ACC829CB9449006558AB /* Main.storyboard */,
 				8158ACCB29CB944B006558AB /* Assets.xcassets */,
 				8158ACCD29CB944B006558AB /* LaunchScreen.storyboard */,
 				8158ACD029CB944B006558AB /* Info.plist */,
 			);
 			path = "Photo Scavenger Hunt";
+			sourceTree = "<group>";
+		};
+		8158ACD629CB94A5006558AB /* Scavenge List */ = {
+			isa = PBXGroup;
+			children = (
+				8101626629CBBF9600EE81EE /* ScavengeListViewController.swift */,
+				8101627029CBF71700EE81EE /* ScavengeCell.swift */,
+			);
+			path = "Scavenge List";
+			sourceTree = "<group>";
+		};
+		8158ACD829CB94CD006558AB /* Scavenge Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8101626829CBDC0C00EE81EE /* ScavengeDetailViewController.swift */,
+				8101626C29CBF58A00EE81EE /* ScavengeAnnotationView.swift */,
+			);
+			path = "Scavenge Detail";
+			sourceTree = "<group>";
+		};
+		8158ACD929CB94D7006558AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81E02C7429CB9A9C005F95AB /* Scavanges.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8158ACC729CB9449006558AB /* ViewController.swift in Sources */,
+				8101626729CBBF9600EE81EE /* ScavengeListViewController.swift in Sources */,
+				8101626D29CBF58A00EE81EE /* ScavengeAnnotationView.swift in Sources */,
 				8158ACC329CB9449006558AB /* AppDelegate.swift in Sources */,
+				8101626929CBDC0C00EE81EE /* ScavengeDetailViewController.swift in Sources */,
+				81E02C7529CB9A9C005F95AB /* Scavanges.swift in Sources */,
+				8101627129CBF71700EE81EE /* ScavengeCell.swift in Sources */,
 				8158ACC529CB9449006558AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,13 +325,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A8RXYA4V5F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Photo Scavenger Hunt/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photos in order to add a photo to complete a task";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -313,13 +355,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A8RXYA4V5F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Photo Scavenger Hunt/Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photos in order to add a photo to complete a task";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
