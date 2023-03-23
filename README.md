@@ -29,7 +29,9 @@ I would add the ability to add more scavenger hunts similarly to the lab
 
 Here's a walkthrough of implemented user stories:
 
-https://imgur.com/a/iPZiYC4
+https://imgur.com/a/iPZiYC4.gif
+
+video created on a mac and converted to a gif using imgur
 
 ## Notes
 
